@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Mwdigo</string>
+    
+    <!-- User Profile strings -->
+    <string name="log_out">Log Out</string>
+    <string name="user_name">User Name</string>
+    <string name="email_address">E-mail Address</string>
+    <string name="contact_no">Contact no</string>
+    <string name="address">Address</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="popular_medicines">Popular Medicines</string>
+    <string name="fictions">Fictions</string>
+    <string name="total_purchased">Total Purchased</string>
+    <string name="view_orders">View Orders</string>
+    <string name="view_my_orders">View My Orders</string>
+    
+    <!-- Cart strings -->
+    <string name="my_cart">My Cart</string>
+    <string name="product_1_name">Product 1</string>
+    <string name="product_2_name">Product 2</string>
+    <string name="product_3_name">Product 3</string>
+    <string name="quantity_2">2</string>
+    <string name="quantity_1">1</string>
+    <string name="price_rs_1500">Rs. 1500</string>
+    <string name="price_rs_800">Rs. 800</string>
+    <string name="price_rs_1200">Rs. 1200</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="total">Total</string>
+    <string name="rs_3500">Rs. 3500</string>
+    <string name="rs_100">Rs. 100</string>
+    <string name="rs_3600">Rs. 3600</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="credit_debit_card">Credit/Debit Card</string>
+    <string name="place_order">Place Order</string>
+    <string name="back">Back</string>
+    <string name="product_3_actual_name">IMMUNITY BOOSTER SYRUP</string>
+    <string name="subtotal_amount">LKR 7500.00</string>
+    <string name="delivery_fee_amount">LKR 300.00</string>
+    <string name="total_amount">LKR 7800.00</string>
+    
+    <!-- Hints -->
+    <string name="enter_user_name">Enter user name</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="enter_your_address">Enter your address</string>
+    
+    <!-- Sample data -->
+    <string name="sample_name">John Doe</string>
+    <string name="sample_email">john.doe@example.com</string>
+    <string name="sample_phone">075-1234567</string>
+    <string name="sample_address">123 Main Street, Colombo, Sri Lanka</string>
+    <string name="sample_count">15</string>
+</resources>

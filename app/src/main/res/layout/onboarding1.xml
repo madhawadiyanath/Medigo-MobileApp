@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7DBF9">
+
+    <!-- Purple Abstract Shape - Top Right Corner -->
+    <View
+        android:id="@+id/purple_shape"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/purple_rounded_bg"
+        android:alpha="0.4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Main Heading -->
+    <TextView
+        android:id="@+id/titleText1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="Browse, Buy, and\nGet it Fast!"
+        android:textColor="#2E2E8C"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Central Illustration -->
+    <ImageView
+        android:id="@+id/medicine_illustration2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/rounded_image_bg"
+        android:contentDescription="Medicine delivery illustration"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/medigo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText1" />
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/descText1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="Enjoy fast, secure, and\ntrackable medicin deliveries\nanytime, anywhere"
+        android:textColor="#2E2E8C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/medicine_illustration2" />
+
+    <!-- Page Indicator Dots -->
+    <LinearLayout
+        android:id="@+id/page_indicators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/descText1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- First dot - Light gray -->
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/dot_inactive" />
+
+        <!-- Second dot - Light gray -->
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/dot_inactive" />
+
+        <!-- Third dot - Active (black) -->
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/dot_active" />
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Back Arrow Button -->
+        <ImageButton
+            android:id="@+id/backBtn1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@drawable/circular_button_bg"
+            android:contentDescription="Back button"
+            android:padding="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Skip Button -->
+        <TextView
+            android:id="@+id/skip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Skip"
+            android:textColor="#2E2E8C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/get_started_button"
+            android:layout_width="164dp"
+            android:layout_height="56dp"
+            android:background="@drawable/onboarding_pink_button_bg"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="Get Started >>"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

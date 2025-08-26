@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".SeeAllActivity">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:id="@+id/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FFFFFF">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back"
+            android:tint="#000000"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@id/logo_image"
+            android:layout_toEndOf="@id/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Search"
+            android:textColorHint="#6A0DAD"
+            android:inputType="text"
+            android:padding="12dp"
+            android:paddingEnd="40dp"
+            android:background="@drawable/search_bar_see_all_bg"
+            android:textColor="#000000" />
+
+        <!-- Search Icon -->
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search"
+            android:contentDescription="Search"
+            android:layout_toStartOf="@id/logo_image"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:tint="#6A0DAD" />
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/medigologo"
+            android:contentDescription="MEDIGO Logo"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <!-- Product List Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Product Card 1 -->
+            <RelativeLayout
+                android:id="@+id/product_card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7EC8E3"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp">
+
+                <!-- Product Image -->
+                <ImageView
+                    android:id="@+id/product_image1"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sc1"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Product 1"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/product_image_see_all_bg" />
+
+                <!-- Product Details -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/product_image1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <!-- Product Name -->
+                    <TextView
+                        android:id="@+id/product_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VITAMIN C TABLETS"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Product Description -->
+                    <TextView
+                        android:id="@+id/product_description1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High potency vitamin C supplements for immune support"
+                        android:textSize="14sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/product_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$24.99"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Rating -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_star"
+                            android:contentDescription="Star"
+                            android:tint="#FFD700" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.8 (120 reviews)"
+                            android:textSize="12sp"
+                            android:textColor="#666666"
+                            android:layout_marginStart="4dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- Product Card 2 -->
+            <RelativeLayout
+                android:id="@+id/product_card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7EC8E3"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp">
+
+                <!-- Product Image -->
+                <ImageView
+                    android:id="@+id/product_image2"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sc2"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Product 2"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/product_image_see_all_bg" />
+
+                <!-- Product Details -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/product_image2"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <!-- Product Name -->
+                    <TextView
+                        android:id="@+id/product_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAIN RELIEF CAPSULES"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Product Description -->
+                    <TextView
+                        android:id="@+id/product_description2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fast-acting pain relief for headaches and body aches"
+                        android:textSize="14sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/product_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$19.99"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Rating -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_star"
+                            android:contentDescription="Star"
+                            android:tint="#FFD700" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.6 (89 reviews)"
+                            android:textSize="12sp"
+                            android:textColor="#666666"
+                            android:layout_marginStart="4dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- Product Card 3 -->
+            <RelativeLayout
+                android:id="@+id/product_card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7EC8E3"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp">
+
+                <!-- Product Image -->
+                <ImageView
+                    android:id="@+id/product_image3"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sc3"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Product 3"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/product_image_see_all_bg" />
+
+                <!-- Product Details -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/product_image3"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <!-- Product Name -->
+                    <TextView
+                        android:id="@+id/product_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMMUNITY BOOSTER SYRUP"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Product Description -->
+                    <TextView
+                        android:id="@+id/product_description3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Natural immunity support with herbal extracts"
+                        android:textSize="14sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/product_price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$29.99"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Rating -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_star"
+                            android:contentDescription="Star"
+                            android:tint="#FFD700" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.9 (156 reviews)"
+                            android:textSize="12sp"
+                            android:textColor="#666666"
+                            android:layout_marginStart="4dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- Product Card 4 -->
+            <RelativeLayout
+                android:id="@+id/product_card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7EC8E3"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp">
+
+                <!-- Product Image -->
+                <ImageView
+                    android:id="@+id/product_image4"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sc1"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Product 4"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/product_image_see_all_bg" />
+
+                <!-- Product Details -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/product_image4"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <!-- Product Name -->
+                    <TextView
+                        android:id="@+id/product_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DIGESTIVE HEALTH PROBIOTICS"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Product Description -->
+                    <TextView
+                        android:id="@+id/product_description4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Advanced probiotic formula for gut health"
+                        android:textSize="14sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/product_price4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$34.99"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Rating -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_star"
+                            android:contentDescription="Star"
+                            android:tint="#FFD700" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.7 (203 reviews)"
+                            android:textSize="12sp"
+                            android:textColor="#666666"
+                            android:layout_marginStart="4dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
